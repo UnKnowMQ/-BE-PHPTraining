@@ -85,7 +85,6 @@ function test_input($data) {
   return $data;
 }
   $user = handle_validate($_POST["username"],$_POST["password"],$_POST["email"],$_POST["phoneNumber"]);
-  echo $user;
   if($user["email"] != null)
     {
       setcookie("username", $user["username"],time()+ 86400,"/");

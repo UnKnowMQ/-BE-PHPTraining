@@ -55,7 +55,6 @@ session_start();
     {
         $username = test_input($username);
         $password = test_input($password);
-
         $hasher = new PasswordHash(8, true);
     
         if(!empty($username) && !empty($password))
@@ -72,7 +71,6 @@ session_start();
             }
     }
         echo handle_login($_POST["username"], $_POST["password"]);
-          echo $_SESSION["user"];
     ?>
 </body>
 
